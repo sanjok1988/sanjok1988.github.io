@@ -3,122 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Sonu Jain</title>
+    <title>Sanjok Dangol - Professional Profile</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #3949ab;
+            --text-color: #333;
+            --background-color: #f5f5f5;
+            --card-background: #ffffff;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
         .container {
-            width: 80%;
+            max-width: 1000px;
             margin: 0 auto;
-            background: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .header {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        .profile-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        .header h1 {
+        .profile-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--secondary-color) 0%, var(--primary-color) 70%);
+            opacity: 0.7;
+            animation: rotate 20s linear infinite;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .profile-header-content {
+            position: relative;
+            z-index: 1;
+        }
+        .profile-header h1 {
             margin: 0;
-            font-size: 24px;
-            color: #007BFF;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        .header p {
-            margin: 5px 0;
-            color: #555;
+        .profile-header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            opacity: 0.9;
         }
         .section {
-            margin-bottom: 20px;
+            background-color: var(--card-background);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
-        .section h2 {
-            background: #007BFF;
-            color: #fff;
-            padding: 10px;
-            margin: -20px -20px 10px -20px;
-            border-radius: 8px 8px 0 0;
+        .section:hover {
+            transform: translateY(-5px);
         }
-        .section ul {
-            list-style-type: none;
-            padding: 0;
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
         }
-        .section ul li {
-            margin-bottom: 10px;
+        .job {
+            margin-bottom: 25px;
+        }
+        .job h3 {
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+        .job p {
+            margin: 5px 0;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .skill:hover {
+            background-color: var(--primary-color);
         }
         .contact-info {
-            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
         .contact-info p {
-            margin: 5px 0;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--secondary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: var(--card-background);
+            border: 4px solid var(--secondary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid var(--card-background);
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent var(--card-background);
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid var(--card-background);
+            border-width: 10px 10px 10px 0;
+            border-color: transparent var(--card-background) transparent transparent;
+        }
+        .right::after {
+            left: -16px;
+        }
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid var(--card-background);
+                border-width: 10px 10px 10px 0;
+                border-color: transparent var(--card-background) transparent transparent;
+            }
+            .left::after, .right::after {
+                left: 15px;
+            }
+            .right {
+                left: 0%;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="profile-header">
+        <div class="profile-header-content">
+            <h1>Sanjok Dangol</h1>
+            <p>Project Manager | Software Developer</p>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="header">
-            <h1>Sonu Jain</h1>
-            <p>Manager Regulatory Affairs</p>
-            <p>4567 Main Street, Metropolis, NY 98052 | (716) 555 - 0100 | sonu@example.com</p>
+        <div class="section">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Bāgmatī, Nepal</p>
+                <p><i class="fas fa-phone"></i> 9843408105</p>
+                <p><i class="fas fa-envelope"></i> sanjog.dangol@gmail.com</p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sanjok-dangol-a7207186" target="_blank">LinkedIn Profile</a></p>
+            </div>
         </div>
 
-        <div class="section profile">
-            <h2>Profile</h2>
-            <p>Collaborative, strategic, and solutions-oriented personal care industry attorney and regulatory affairs professional at dynamic cosmetics company marketing color cosmetics, OTC/sunscreen, and nutritional supplements in the U.S. & internationally. Provide legal and business support to executive, marketing, product development, & sales teams. Manage domestic & international regulatory compliance.</p>
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Experienced Founder and Project Manager with a proven track record in the computer software industry. Proficient in PHP Laravel framework, Vue.js, Spring Boot, and various other technologies. Strong business development professional with a BSc (Hons) in Computing, focused on Computer Engineering from UCSI.</p>
         </div>
 
-        <div class="section experience">
-            <h2>Experience</h2>
-            <h3>Manager Regulatory Affairs</h3>
-            <p>Contoso, Metropolis, New York | 20XX - Present</p>
-            <ul>
-                <li>Research and advise on cosmetics industry topics including product safety, environmental and social awareness issues such as ingredient sustainability, GMOs, micro-plastics, and natural positioning.</li>
-                <li>Contract review and negotiation. Review and negotiate business agreements, including multi-channel distribution, manufacturing, software and service, IP and licensing.</li>
-                <li>Marketing claims and packaging review. Review and advise management and employees on product and brand marketing and advertising claims in print and digital/social and propose solutions as required, based on legal compliance, industry practice, and risk level.</li>
-                <li>Provide leadership and expertise on all aspects of product regulatory compliance to ensure that products are successfully introduced and maintained domestically and globally pursuant to regulations. Ensure compliance and coordinate and oversee work of EU Safety Assessor.</li>
-                <li>Good manufacturing practices. Advise on and implement FDA cGMPs for relevant products.</li>
-                <li>Continued education re Regulatory Compliance, Ingredient Safety, & Social Awareness Concerns.</li>
-                <li>Legislation and lobbying. Represent company in lobbying before state legislators.</li>
-                <li>Third party certification. Advise and coordinate third party certifications.</li>
-            </ul>
-            
-            <h3>Associate Attorney</h3>
-            <p>Contoso, Metropolis, New York | 20XX - 20XX</p>
-            <ul>
-                <li>Negotiated real estate transactions, financing and real property title and zoning issues.</li>
-                <li>Drafted commercial and residential purchase and sales contracts and leases. Real estate closings. Formed limited liability companies.</li>
-            </ul>
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="job">
+                        <h3>Project Development Manager</h3>
+                        <p>DATABLOCKAI | April 2024 - Present</p>
+                        <p>Location: Gangneung, Gangwondo</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="job">
+                        <h3>Technology Teams Director</h3>
+                        <p>Workzone1 | February 2023 - Present</p>
+                        <p>Location: Hong Kong SAR</p>
+                        <p>Workforce solutions & Education Entrepreneur | Online Education Systems | Workforce Solutions and Payments</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="job">
+                        <h3>Software Developer</h3>
+                        <p>Global English Campus | August 2021 - Present</p>
+                        <p>Location: South Korea (Remote)</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="section education">
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill">Xane HTR & OCR</span>
+                <span class="skill">REST APIs</span>
+                <span class="skill">WordPress</span>
+                <span class="skill">Laravel</span>
+                <span class="skill">PHP</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Java</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">jQuery</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">CSS</span>
+            </div>
+        </div>
+
+        <div class="section">
             <h2>Education</h2>
-            <h3>Juris Doctor</h3>
-            <p>Impressive School of Law, Metropolis, New York | 20XX</p>
-            <p>Editor at Law Journal, 20XX</p>
-            
-            <h3>Bachelor of Arts</h3>
-            <p>Bellows College, Metropolis, New York | 20XX</p>
+            <div class="job">
+                <h3>Master of Computer Applications - MCA, Data Science</h3>
+                <p>Coventry University | September 2022 - September 2024</p>
+            </div>
+            <div class="job">
+                <h3>BSc (Hons) Computing, Computer Software Engineering</h3>
+                <p>UCSI | 2016 - 2019</p>
+            </div>
         </div>
 
-        <div class="section skills">
-            <h2>Skills + Interests</h2>
-            <ul>
-                <li>Legal research</li>
-                <li>Westlaw</li>
-                <li>Lexis/Nexis</li>
-                <li>Research</li>
-                <li>Reading</li>
-                <li>Environmental conservation</li>
-                <li>Art</li>
-                <li>Yoga</li>
-                <li>Travel</li>
-                <li>Fluent in German</li>
-            </ul>
+        <div class="section">
+            <h2>Languages</h2>
+            <p>English (Elementary), Nepali (Native or Bilingual), Hindi (Elementary)</p>
+        </div>
+
+        <div class="section">
+            <h2>Honors & Awards</h2>
+            <p>Certificate of Academic Excellence (Dean's List)</p>
         </div>
     </div>
 </body>
