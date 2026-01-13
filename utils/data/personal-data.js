@@ -13,7 +13,7 @@ My expertise extends beyond Laravel to include front-end technologies, DevOps, a
   address: "Kathmandu, Nepal",
   
   github: "https://github.com/sanjok1988",
-  facebook: "https://www.facebook.com/abusaid.riyaz/",
+  facebook: "https://www.facebook.com/",
   linkedIn: "https://www.linkedin.com/in/sanjok-dangol-a7207186/",
   twitter: "https://twitter.com/sanjokdangol",
   stackOverflow: "https://stackoverflow.com/users/10651369/sanjok-dangol",
