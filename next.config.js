@@ -1,12 +1,12 @@
 const path = require('path')
  
 module.exports = {
-  basePath: "/SANJOK1988.GITHUB.IO",
   output:"export",
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-  images: { unoptimized: true }
+  images: { unoptimized: true },
+  trailingSlash: true,
   // images: {
   //   remotePatterns: [
   //     {
