@@ -185,7 +185,8 @@
           "Voice-to-text integration",
           "OTP authentication via AWS SES",
           "Platform scaled to 10K+ users"
-        ]
+        ],
+        "link": "https://edu.globalenglishcampus.com"
       },
       {
         "name": "Workzone1 (Time Tracker & PM Tool)",
@@ -203,7 +204,8 @@
           "Multi-language and multi-currency support",
           "AWS Amplify + EC2 deployment",
           "Google Maps integration"
-        ]
+        ],
+        "link": "https://workzone1.com"
       },
       {
         "name": "DATABLOCK (AI Real Estate)",
@@ -221,7 +223,8 @@
           "Role-based authentication",
           "Subscription plans with Stripe",
           "Cron job scheduling"
-        ]
+        ],
+        "link": "https://datablockai.com"
       },
       {
         "name": "NuwaKot News Portal",
@@ -237,7 +240,8 @@
           "Admin dashboard",
           "Content management",
           "Responsive design"
-        ]
+        ],
+        "link": "https://nuwakotnews.com"
       },
       {
         "name": "Nepal Dristi",
@@ -253,7 +257,8 @@
           "Responsive design",
           "Laravel backend",
           "Content management"
-        ]
+        ],
+        "link": "https://nepaldristi.com"
       }
     ]
   },
