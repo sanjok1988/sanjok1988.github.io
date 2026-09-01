@@ -1,0 +1,287 @@
+{
+  "personalInfo": {
+    "name": "Sanjok Dangol",
+    "title": "Senior Laravel Developer & Project Manager",
+    "location": "Kathmandu, Nepal",
+    "email": "sanjokdangol1@gmail.com",
+    "contactNo": "+977-9843408105",
+    "profileImage": "https://sanjok1988.github.io/images/sanjok.png",
+    "website": "https://sanjokdangol.com.np/",
+    "github": "https://github.com/sanjok1988",
+    "linkedin": "https://www.linkedin.com/in/sanjok-dangol-a7207186/",
+    "twitter": "https://twitter.com/DangolSanjog",
+    "upwork": "https://www.upwork.com/freelancers/~012bdcd875f56cd8c6",
+    "youtube": "https://www.youtube.com/@computingwithsanjok3402",
+    "resume": "https://drive.google.com/file/d/1XDThV50eajfXrRzhJv95q7DPEGu28eIV/view?usp=drive_link"
+  },
+  "summary": {
+    "content": "I am a highly experienced Senior Laravel Developer and Project Manager with a proven track record in architecting and delivering high-performance web applications. My expertise spans the full software development lifecycle, from robust backend development and API design to seamless system integration and deployment. As a Project Manager, I excel at leading cross-functional teams, fostering clear communication, and implementing agile methodologies to ensure projects are delivered efficiently, on time, and within budget. My passion lies in leveraging cutting-edge technologies to solve real-world problems and create impactful digital experiences.",
+    "vibes": "/images/vibes/summary.jpg"
+  },
+  "skills": {
+    "vibes": "/images/vibes/skills.jpg",
+    "Languages & Frameworks": [
+      "PHP",
+      "Laravel",
+      "JavaScript",
+      "TypeScript",
+      "Next.js",
+      "NestJS",
+      "Express"
+    ],
+    "Frontend & Styling": [
+      "React",
+      "Tailwind CSS",
+      "HTML",
+      "CSS"
+    ],
+    "Databases & Cloud": [
+      "MySQL",
+      "MongoDB",
+      "AWS",
+      "Docker",
+      "Nginx"
+    ],
+    "APIs & Integrations": [
+      "OpenAI API",
+      "Stripe",
+      "Google Maps",
+      "REST APIs"
+    ],
+    "Tools": [
+      "Git",
+      "GitHub",
+      "Postman",
+      "VS Code"
+    ]
+  },
+  "experience": {
+    "vibes": "/images/vibes/experience.jpg",
+    "items": [
+      {
+        "company": "Global English Campus",
+        "position": "Software Engineer I",
+        "duration": "Jan 2022 - Present",
+        "location": "Remote",
+        "responsibilities": [
+          "Led development and scaling of the AI-powered educational platform used by 10K+ users",
+          "Implemented core backend systems using Laravel, integrating OpenAI API for custom AI assistants and voice-to-text features",
+          "Optimized database queries and system architecture, reducing application response time by 40%",
+          "Managed AWS infrastructure (SES, S3) for email communication and file storage, ensuring 99.9% uptime",
+          "Mentored 5+ junior developers, establishing coding standards and best practices for the team",
+          "Collaborated with cross-functional teams to deliver project milestones on schedule"
+        ],
+        "technologies": [
+          "Laravel",
+          "OpenAI API",
+          "AWS SES",
+          "AWS S3",
+          "MySQL",
+          "Nginx"
+        ],
+        "link": "https://edu.globalenglishcampus.com",
+        "image": "/images/logos/gec.png"
+      },
+      {
+        "company": "Workzone1",
+        "position": "Project Manager",
+        "duration": "Jun 2021 - Jan 2022",
+        "location": "Remote",
+        "responsibilities": [
+          "Oversaw end-to-end development of the Workzone1 Time Tracker & PM Tool with NextJS frontend and NestJS backend",
+          "Implemented Agile/Scrum methodologies, reducing project delivery time by 30%",
+          "Coordinated with 12+ developers, designers, and QA specialists to ensure alignment with client requirements",
+          "Managed AWS deployment (Amplify, EC2) and integrated Google Maps API for location-based features",
+          "Maintained regular client communication with weekly progress updates"
+        ],
+        "technologies": [
+          "NextJS",
+          "NestJS",
+          "Tailwind CSS",
+          "Google Maps",
+          "MySQL",
+          "AWS"
+        ],
+        "link": "https://workzone1.com",
+        "image": "/images/programmer.png"
+      },
+      {
+        "company": "Letitu",
+        "position": "Project Manager",
+        "duration": "Sep 2025 - Present",
+        "location": "Remote",
+        "responsibilities": [
+          "Lead a cross-functional team of 25+ developers on enterprise-level web application projects",
+          "Streamlined project workflows and implemented risk management strategies, reducing delivery delays by 25%",
+          "Facilitate client meetings to define project scope, requirements, and success metrics",
+          "Monitor project budgets and resource allocation to deliver within financial constraints",
+          "Drive continuous improvement initiatives to enhance team productivity"
+        ],
+        "technologies": [
+          "Laravel",
+          "Agile",
+          "Project Management",
+          "AWS",
+          "Docker"
+        ],
+        "link": "",
+        "image": "/images/programmer.png"
+      },
+      {
+        "company": "Self Employed",
+        "position": "Independent Developer & Content Creator",
+        "duration": "Jan 2018 - Present",
+        "location": "Kathmandu, Nepal",
+        "responsibilities": [
+          "Delivered 50+ custom web development projects for clients globally with 100% client satisfaction on Upwork",
+          "Maintain a YouTube channel with Laravel, PHP, and web development tutorials for 10K+ subscribers",
+          "Provide freelance consulting for backend architecture design and project management",
+          "Built and managed client projects using Laravel, MySQL, Docker, and AWS",
+          "Authored technical blog posts sharing web development best practices"
+        ],
+        "technologies": [
+          "Laravel",
+          "PHP",
+          "MySQL",
+          "Docker",
+          "AWS"
+        ],
+        "link": "https://github.com/sanjok1988",
+        "image": "/images/programmer.png"
+      }
+    ]
+  },
+  "education": {
+    "vibes": "/images/vibes/education.JPG",
+    "items": [
+      {
+        "degree": "Master Degree",
+        "institution": "Coventry University London",
+        "year": "2023 - 2025"
+      },
+      {
+        "degree": "BSc (Hons) Computing",
+        "institution": "UCSI University",
+        "year": "2017 - 2020"
+      }
+    ]
+  },
+  "projects": {
+    "vibes": "/images/vibes/projects.jpg",
+    "items": [
+      {
+        "name": "Global English Campus (AI Educational Platform)",
+        "description": "Comprehensive AI-powered educational web app with Laravel, OpenAI, AWS (SES, S3), and MySQL. OTP authentication, custom AI assistants, and voice-to-text capabilities.",
+        "technologies": [
+          "Laravel",
+          "OpenAI API",
+          "AWS SES",
+          "AWS S3",
+          "MySQL",
+          "Nginx"
+        ],
+        "features": [
+          "AI assistant training with custom datasets",
+          "Voice-to-text integration",
+          "OTP authentication via AWS SES",
+          "Platform scaled to 10K+ users"
+        ]
+      },
+      {
+        "name": "Workzone1 (Time Tracker & PM Tool)",
+        "description": "Full-stack application with NextJS/TypeScript/Tailwind frontend and NestJS/MySQL/TypeORM backend. Deployed on AWS Amplify and EC2 with Google Maps integration.",
+        "technologies": [
+          "NextJS",
+          "NestJS",
+          "Tailwind CSS",
+          "Google Maps",
+          "MySQL",
+          "AWS"
+        ],
+        "features": [
+          "Time tracking and project management",
+          "Multi-language and multi-currency support",
+          "AWS Amplify + EC2 deployment",
+          "Google Maps integration"
+        ]
+      },
+      {
+        "name": "DATABLOCK (AI Real Estate)",
+        "description": "AI-based real estate app with Replicate and OpenAI for image processing. Express/TypeScript/MongoDB/Stripe backend with NextJS/Tailwind UI, role-based auth, and subscriptions.",
+        "technologies": [
+          "NextJS",
+          "Express",
+          "OpenAI API",
+          "Stripe",
+          "MongoDB",
+          "Replicate API"
+        ],
+        "features": [
+          "AI image processing",
+          "Role-based authentication",
+          "Subscription plans with Stripe",
+          "Cron job scheduling"
+        ]
+      },
+      {
+        "name": "NuwaKot News Portal",
+        "description": "Modern news platform built with Laravel and MySQL featuring a scalable CMS with admin dashboard.",
+        "technologies": [
+          "Laravel",
+          "MySQL",
+          "PHP",
+          "Bootstrap"
+        ],
+        "features": [
+          "Scalable CMS",
+          "Admin dashboard",
+          "Content management",
+          "Responsive design"
+        ]
+      },
+      {
+        "name": "Nepal Dristi",
+        "description": "Dynamic web portal with Laravel backend, responsive design, and content management features.",
+        "technologies": [
+          "Laravel",
+          "MySQL",
+          "PHP",
+          "JavaScript"
+        ],
+        "features": [
+          "Dynamic content portal",
+          "Responsive design",
+          "Laravel backend",
+          "Content management"
+        ]
+      }
+    ]
+  },
+  "openSource": {
+    "vibes": "/images/vibes/open-source.jpg",
+    "items": []
+  },
+  "achievements": {
+    "vibes": "/images/vibes/achievements.jpg",
+    "items": [
+      "50+ projects delivered with 100% client satisfaction rate",
+      "6+ years of professional software development experience",
+      "AI platform scaled to 10K+ users in 6 months",
+      "Reduced application response time by 40% through optimization",
+      "Achieved 99.9% uptime over 12 months on AWS infrastructure",
+      "Successfully managed teams of 25+ developers on enterprise projects",
+      "5.0/5.0 Upwork rating with recognized strengths in quality and communication"
+    ]
+  },
+  "contact": {
+    "vibes": "/images/vibes/contact.jpg"
+  },
+  "interests": [
+    "Innovative project ideas",
+    "Challenging technical problems",
+    "Collaborating with talented teams",
+    "Knowledge sharing & learning",
+    "Building impactful products",
+    "Open-source contributions"
+  ]
+}
